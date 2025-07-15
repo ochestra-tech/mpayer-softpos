@@ -1,0 +1,63 @@
+{
+    "test_cards": [
+        {
+            "type": "Visa",
+            "pan": "4111111111111111",
+            "expiry": "2512",
+            "cvv": "123",
+            "track2": "4111111111111111=25122010000000000000",
+            "emv_data": {
+                "aid": "A0000000031010",
+                "app_label": "VISA CREDIT",
+                "country_code": "0840",
+                "currency_code": "0840"
+            }
+        },
+        {
+            "type": "Mastercard",
+            "pan": "5555555555554444",
+            "expiry": "2512",
+            "cvv": "123",
+            "track2": "5555555555554444=25122010000000000000",
+            "emv_data": {
+                "aid": "A0000000041010",
+                "app_label": "MASTERCARD",
+                "country_code": "0840",
+                "currency_code": "0840"
+            }
+        },
+        {
+            "type": "American Express",
+            "pan": "378282246310005",
+            "expiry": "2512",
+            "cvv": "1234",
+            "track2": "378282246310005=25122010000000000000",
+            "emv_data": {
+                "aid": "A000000025010801",
+                "app_label": "AMEX",
+                "country_code": "0840",
+                "currency_code": "0840"
+            }
+        }
+    ],
+    "test_scenarios": [
+        {
+            "name": "Successful Transaction",
+            "amount": 10.00,
+            "expected_response": "00",
+            "description": "Standard approved transaction"
+        },
+        {
+            "name": "Insufficient Funds",
+            "amount": 999.99,
+            "expected_response": "51",
+            "description": "Declined due to insufficient funds"
+        },
+        {
+            "name": "Expired Card",
+            "amount": 25.00,
+            "expected_response": "54",
+            "description": "Card expiry date has passed"
+        }
+    ]
+}

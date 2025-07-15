@@ -1,0 +1,112 @@
+{
+    "iso8583_fields": {
+        "1": {
+            "name": "Secondary Bitmap",
+            "type": "Binary",
+            "length": 8,
+            "description": "Presence indicator for fields 65-128"
+        },
+        "2": {
+            "name": "Primary Account Number",
+            "type": "LLVAR",
+            "max_length": 19,
+            "description": "Card number"
+        },
+        "3": {
+            "name": "Processing Code",
+            "type": "Fixed",
+            "length": 6,
+            "description": "Transaction type and account types"
+        },
+        "4": {
+            "name": "Transaction Amount",
+            "type": "Fixed",
+            "length": 12,
+            "description": "Amount in cents"
+        },
+        "11": {
+            "name": "System Trace Audit Number",
+            "type": "Fixed",
+            "length": 6,
+            "description": "Sequential number"
+        },
+        "12": {
+            "name": "Local Transaction Time",
+            "type": "Fixed",
+            "length": 6,
+            "description": "HHMMSS format"
+        },
+        "13": {
+            "name": "Local Transaction Date",
+            "type": "Fixed",
+            "length": 4,
+            "description": "MMDD format"
+        },
+        "22": {
+            "name": "POS Entry Mode",
+            "type": "Fixed",
+            "length": 3,
+            "description": "How card data was obtained"
+        },
+        "25": {
+            "name": "POS Condition Code",
+            "type": "Fixed",
+            "length": 2,
+            "description": "Transaction condition"
+        },
+        "32": {
+            "name": "Acquiring Institution ID",
+            "type": "LLVAR",
+            "max_length": 11,
+            "description": "Acquirer identifier"
+        },
+        "35": {
+            "name": "Track 2 Data",
+            "type": "LLVAR",
+            "max_length": 37,
+            "description": "Magnetic stripe track 2"
+        },
+        "37": {
+            "name": "Retrieval Reference Number",
+            "type": "Fixed",
+            "length": 12,
+            "description": "Unique transaction reference"
+        },
+        "38": {
+            "name": "Authorization Code",
+            "type": "Fixed",
+            "length": 6,
+            "description": "Approval code"
+        },
+        "39": {
+            "name": "Response Code",
+            "type": "Fixed",
+            "length": 2,
+            "description": "Transaction result"
+        },
+        "41": {
+            "name": "Terminal ID",
+            "type": "Fixed",
+            "length": 8,
+            "description": "Terminal identifier"
+        },
+        "42": {
+            "name": "Merchant ID",
+            "type": "Fixed",
+            "length": 15,
+            "description": "Merchant identifier"
+        },
+        "49": {
+            "name": "Currency Code",
+            "type": "Fixed",
+            "length": 3,
+            "description": "ISO currency code"
+        },
+        "55": {
+            "name": "EMV Data",
+            "type": "LLLVAR",
+            "max_length": 999,
+            "description": "EMV chip data"
+        }
+    }
+}
