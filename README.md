@@ -65,32 +65,6 @@ const val DEFAULT_MERCHANT_ID = "your-merchant-id"
 ./gradlew installDebug
 ```
 
-## Project Structure
-
-```
-app/src/main/kotlin/com/softpos/app/
-├── MainActivity.kt                 # Main entry point with NFC handling
-├── TransactionViewModel.kt         # Business logic and state management
-├── TransactionScreen.kt           # Jetpack Compose UI
-├── NFCCardReader.kt              # EMV chip card reading
-├── ISO8583Message.kt             # Message formatting
-├── TransactionManager.kt         # Transaction processing
-├── HostCommunication.kt          # Network communication
-├── EMVCardData.kt               # Data classes
-├── TransactionResponse.kt        # Response handling
-├── ResponseParser.kt            # Response parsing
-├── data/
-│   └── PreferencesManager.kt    # Settings management
-├── utils/
-│   ├── Constants.kt             # Application constants
-│   ├── Extensions.kt            # Kotlin extensions
-│   ├── SecurityUtils.kt         # Security utilities
-│   └── ValidationUtils.kt       # Input validation
-└── ui/theme/
-    ├── Theme.kt                 # Material Design theme
-    ├── Color.kt                 # Color definitions
-    └── Type.kt                  # Typography
-```
 
 ## Usage
 
@@ -232,8 +206,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For support and questions:
 - Create an issue on GitHub
-- Email: support@softpos.com
-- Documentation: https://docs.softpos.com
+- Email: support@mpayer.ng
+- Documentation: https://softpos-docs.mpayer.ng
 
 ## Acknowledgments
 
@@ -244,4 +218,4 @@ For support and questions:
 
 ---
 
-**⚠️ Important:** This is a development/educational implementation. For production use, ensure proper security audits, PCI DSS compliance, and certification from payment networks.#moayer-softpos
+**⚠️ Important:** This is a development/demo implementation. For production use, ensure proper security audits, PCI DSS compliance, and certification from payment networks. #mpayer-softpos
