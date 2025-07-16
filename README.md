@@ -244,4 +244,4 @@ For support and questions:
 
 ---
 
-**⚠️ Important:** This is a development/educational implementation. For production use, ensure proper security audits, PCI DSS compliance, and certification from payment networks.
+**⚠️ Important:** This is a development/educational implementation. For production use, ensure proper security audits, PCI DSS compliance, and certification from payment networks.#moayer-softpos
